@@ -1,0 +1,15 @@
+{
+  "name": "desafio_final_js_avancado",
+  "version": "1.0.0",
+  "description": "Desafio final JS avançado",
+  "main": "main.js",
+  "author": "Francisco de Souza Sancho",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "start": "node --experimental-json-modules main.js"
+  },
+  "dependencies": {
+    "date-fns": "^2.24.0"
+  }
+}
