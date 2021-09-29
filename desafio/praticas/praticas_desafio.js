@@ -39,4 +39,4 @@ const numeros = [ 12, 32, 54, 6, 8, 89, 64, 64, 6 ]
 // })
 
 const sortedNumeros = numeros.sort((a, b) => b - a)
-console.log(sortedNumeros)
+console.log(sortedNumeros)  

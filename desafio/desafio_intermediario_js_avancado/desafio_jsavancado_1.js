@@ -16,6 +16,7 @@ a. Crie e imprima no console um objeto que possui a quantidade de colaboradores 
 {'front-end': 2, 'back-end': 2, 'designer': 1, 'estágiario': 1}.
 */
 const newColab = colaboradores.reduce(function (arr, colab) {
+  // console.log(arr)
   if (colab.cargo in arr) {
     arr[colab.cargo]++
   } else {
@@ -23,7 +24,7 @@ const newColab = colaboradores.reduce(function (arr, colab) {
   } 
   return arr
 }, {})
-console.log(newColab)
+// console.log("Quantidade de colaboradores :", newColab)
 
 
 
@@ -31,7 +32,7 @@ console.log(newColab)
 b. Imprima no console o array ordenado por idade de forma decrescente
 */
 const ordena = colaboradores.sort((x, y) => y.idade - x.idade)
-console.log(ordena)
+// console.log("Array ordenado: ", ordena)
 
 
 
@@ -43,7 +44,7 @@ const order = { 'estagiario': 0, 'front-end': 1, 'back-end': 2, 'designer': 3 }
 const orderingColab = colaboradores.sort(
   (a, b) => order[a.cargo] - order[b.cargo]
   )
-console.log(orderingColab)
+// console.log("Ordenado por cargo: ", orderingColab)
 
 
 
@@ -51,8 +52,10 @@ console.log(orderingColab)
 d. Imprima no console o array colaboradores ordenado por idade de forma crescente e, em caso de empate, o desempate 
 deve ser feito por ordem de cargo (ordem: estagiario (1º), front-end (2º), back-end (3º), designer (4º))
 */
-const orderedByAge = colaboradores.sort((a, b) => a.idade - b.idade)
-console.log(orderedByAge)
+
+// const orderedByAge = colaboradores.sort((a, b) => order[a.idade] - order[b.idade])
+// console.log(colaboradores)
+// console.log("Ordenar por idade: ", orderedByAge)
 
 
 
@@ -74,7 +77,7 @@ a. Imprima no console o valor total das parcelas.
 const totalValue = installments.reduce((acc, elem) =>{
     return acc + elem.value
 }, 0)
-console.log('Total: ', totalValue.toFixed(2))
+// console.log('Total: ', totalValue.toFixed(2))
 
 
 
@@ -82,23 +85,21 @@ console.log('Total: ', totalValue.toFixed(2))
 b. Crie e imprima no console um objeto que possui o valor total em aberto e o valor total já pago. 
 Saída esperada: {total_paid: 386.78, total_open: 316.3}.
 */
-const total_paid = installments.filter(elem => {
-    if(elem.status === 'Pago') {
-        return elem.value++
-    }
-}).reduce((acc, elem) => {
-  return acc + elem.value
-}, 0)
+// const total_paid = installments.filter(elem => elem.status === 'Pago').reduce((acc, elem) => {
+//   return acc + elem.value
+// }, 0)
+// console.log(installments)
+// const total_open = installments.filter(elem => elem.status === 'Aberto').reduce((acc, elem) => {
+// return acc + elem.value
+// }, 0)
 
-const total_open = installments.filter(elem => {
-    if(elem.status === 'Aberto') {
-        return elem.value++
-    }
-}).reduce((acc, elem) => {
-return acc + elem.value
-}, -2)
+const instalFormated = installments.reduce((acc, elem) => {
+  elem.status === "Pago" ? acc.total_paid += elem.value : acc.total_open += elem.value
+  return acc
+}, {total_paid: 0, total_open: 0})
 
-console.log(`{ total_paid: ${total_paid}, total_open: ${total_open}}`)
+console.log(instalFormated)
+// console.log(`{ total_paid: ${total_paid}, total_open: ${total_open}}`)
 
 
 
@@ -106,7 +107,7 @@ console.log(`{ total_paid: ${total_paid}, total_open: ${total_open}}`)
 c. Imprima no console o array de parcelas ordenado por valor de forma decrescente.
 */
 const orderedInstallmentsDescending = installments.sort((a, b) => b.value - a.value)
-console.log(orderedInstallmentsDescending)
+// console.log("Ordem de parcelas: ", orderedInstallmentsDescending)
 
 
 

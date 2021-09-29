@@ -1,0 +1,13 @@
+{
+  "name": "verificacnpj",
+  "version": "1.0.0",
+  "description": "Resolução atividade verifica cnpj",
+  "main": "index.js",
+  "author": "Francisco de Souza Sancho",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+}
+}
+  

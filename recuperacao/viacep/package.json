@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "console-input": "^1.0.2",
+    "node-console-input": "^1.1.1",
+    "node-fetch": "^3.0.0"
+  },
+  "type": "module"
+}

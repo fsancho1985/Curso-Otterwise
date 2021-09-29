@@ -1,0 +1,41 @@
+Arguments: 
+  /home/sancho/.nvm/versions/node/v14.17.6/bin/node /home/sancho/.nvm/versions/node/v14.17.6/bin/yarn start
+
+PATH: 
+  /home/sancho/.vscode-server/bin/83bd43bc519d15e50c4272c6cf5c1479df196a4d/bin:/home/sancho/.nvm/versions/node/v14.17.6/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/mnt/c/Program Files/WindowsApps/CanonicalGroupLimited.Ubuntu20.04onWindows_2004.2021.825.0_x64__79rhkp1fndgsc:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/nodejs/:/mnt/c/Users/fr_sa/AppData/Local/Programs/Python/Python39/Scripts/:/mnt/c/Users/fr_sa/AppData/Local/Programs/Python/Python39/:/mnt/c/Users/fr_sa/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/fr_sa/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/fr_sa/AppData/Roaming/npm:/snap/bin
+
+Yarn version: 
+  1.22.11
+
+Node version: 
+  14.17.6
+
+Platform: 
+  linux x64
+
+Trace: 
+  SyntaxError: /home/sancho/otterwise/exercicios_discord/verificaCNPJ/package.json: Unexpected end of JSON input
+      at JSON.parse (<anonymous>)
+      at /home/sancho/.nvm/versions/node/v14.17.6/lib/node_modules/yarn/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/home/sancho/.nvm/versions/node/v14.17.6/lib/node_modules/yarn/lib/cli.js:310:30)
+      at /home/sancho/.nvm/versions/node/v14.17.6/lib/node_modules/yarn/lib/cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "verificaCNPJ",
+    "version": "1.0.0",
+    "description": "Resolução atividade verifica cnpj",
+    "main": "index.js",
+    "author": "Francisco de Souza Sancho",
+    "license": "MIT",
+    "type": "module",
+    "scripts": {
+      "start": "node index.js"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

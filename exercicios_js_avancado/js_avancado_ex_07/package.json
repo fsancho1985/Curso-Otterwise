@@ -1,0 +1,15 @@
+{
+  "name": "js_avancado_ex_07",
+  "version": "1.0.0",
+  "description": "projeto de aprendizagem aula de Pacotes",
+  "main": "index.js",
+  "author": "Francisco Sancho",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "date-fns": "^2.23.0"
+  },
+  "scripts": {
+    "start": "node index.js"
+  }
+}

@@ -1,0 +1,72 @@
+/* a. Cor de fundo das páginas antiquewhite */
+body {
+    background-color: antiquewhite;
+}
+
+/* b. O texto do footer deve ser em negrito e tamanho 12px. */
+footer p {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* c. Os itens de navegação devem ter margem acima e abaixo de 20px. */
+nav ul li {
+    margin: 20px 0 ;
+}
+
+/* d. Os links de navegação devem ter a cor branca, deve ser removido o sublinhao, o alinhamento do texto deve ser centralizado
+espaçamento interno em todas as direções de 5px e cor de fundo darkcyan.
+*/
+nav ul {
+    background-color: darkcyan;
+    text-align: center;
+    padding: 5px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* e. A seção do formulário deve ter espaçamento interno de 20px e cor de fundo darkgray */
+section form {
+    padding: 20px;
+    background-color: darkgray;
+}
+
+/* f. Os cabeçalhos da classe title devem ter um espaçamento de linha de 18px, tamanho de fonte 14px e cor de texto darkcyan */
+section h1 {
+    line-height: 18px;
+    font-size: 14px;
+    color: darkcyan;
+}
+
+/* g. O formulário deve ter uma largura de 380px. */
+form {
+    width: 380px;
+}
+
+/* h. Os inputs do formulário devem possuir margem acima e abaixo de 15px. */
+form input {
+    margin: 15px 0;
+}
+
+/* i. O botão de enviar deve ter uma largura de 220px, espaçamento interno em todas as direções de 10px, sem marcação de borda,
+com arredondamento da borda em 10px, cor de texto branca e cor de fundo darkcyan.
+*/
+form button {
+    width: 220px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    color: white;
+    background-color: darkcyan;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(58, 100, 100);
+}
