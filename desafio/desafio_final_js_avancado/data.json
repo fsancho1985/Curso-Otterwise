@@ -4,11 +4,13 @@
         {"id": 2, "name": "Juca"},
         {"id": 3, "name": "Sancho"},
         {"id": 5, "name": "Francisco"},
-        {"id": 10, "name": "Francisco"}
+        {"id": 10, "name": "Francisco"},
+        {"id": 6, "name": "Matheus"}
 
     ],
     "purchases": [
     {"client_id": 1, "data": "11/04/2021", "total": 100.0},
+    {"client_id": 1, "data": "19/09/2019", "total": 200.0},
     {"client_id": 2, "data": "11/03/2021", "total": 83.74},
     {"client_id": 2, "data": "08/02/2021", "total": 52.48},
     {"client_id": 1, "data": "20/04/2021", "total": 329.99},
