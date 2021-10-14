@@ -53,15 +53,15 @@
     </main>         
     <section class="container-form">
         <div class="card-form">
-            <form onsubmit="getInfo()">
+            <form id="form" onsubmit="getInfo()">
                 <label class="form-name" for="name">Nome Completo</label>
-                <input type="text" name="name" id="name" required>
+                <input type="text" name="name" id="name">
                 <label class="form-email" for="email">E-mail</label>
-                <input type="email" name="email" id="email" required>
+                <input type="email" name="email" id="email">
                 <label class="form-phone" for="phone">Telefone</label>
                 <input type="tel" name="phone" id="phone" >
                 <label class="form-message" for="message">Mensagem</label>
-                <textarea name="message" id="message" wrap="hard" required></textarea>
+                <textarea name="message" id="message" wrap="hard"></textarea>
                 <button class="btn-send" type="submit">ENVIAR</button>
                 </form>
             </div>

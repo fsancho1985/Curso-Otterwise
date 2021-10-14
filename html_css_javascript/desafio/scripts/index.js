@@ -4,7 +4,6 @@ const menuMobile = document.querySelector('#menu-mobile')
 const titulo = document.querySelector('.container-titulo')
 const subTitulo = document.querySelector('.container-text')
 
-// Função para habilitar o menu mobile
 function showMenu() {
     titulo.style.height = '410px'
     subTitulo.style.display = 'none'
@@ -14,7 +13,6 @@ function showMenu() {
     btnMenuClose.style.zIndex = '1'
 }
 
-// Função para fechar o menu mobile
 function closeMenu() {
     menuMobile.style.display = 'none'
     titulo.style.height = '310px'
@@ -41,7 +39,6 @@ function getInfo() {
         "phone": fone,
         "message": message
     }
-    // console.log('body: ', typeof (body))
     sendPost(url, body)
 }
 
@@ -52,12 +49,23 @@ async function sendPost(url, body) {
         headers: {"Content-type": "application/json"}
         
     })
-
+    
     const data = await response.json()
-    data.type === "Sucesso" ? alert('Post realizado com sucesso!') : alert(data.message)
-    document.getElementById('name').value = ""
-    document.getElementById('email').value = ""
-    document.getElementById('phone').value = ""
-    document.getElementById('message').value = ""
+    try {
+        const nome = document.getElementById('name').value
+        const email = document.getElementById('email').value
+        const phone = document.getElementById('phone').value 
+        const message = document.getElementById('message').value
+        if(nome === '') throw 'Preencha seu nome'
+        if(email === '') throw 'Preencha seu email'
+        if(phone === '') throw 'Preencha seu telefone'
+        if(message === '') throw 'Preencha sua mensagem'
+        
+        alert('Mensagem enviada com sucesso!')
+    }
+    catch (error) {
+        alert(error)
+    }
+    data.type !== 'Error' ? document.forms.form.reset() : ''       
 }
 
