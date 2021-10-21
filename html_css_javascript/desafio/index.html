@@ -55,13 +55,13 @@
         <div class="card-form">
             <form id="form" onsubmit="getInfo()">
                 <label class="form-name" for="name">Nome Completo</label>
-                <input type="text" name="name" id="name">
+                <input type="text" name="name" id="name" required>
                 <label class="form-email" for="email">E-mail</label>
-                <input type="email" name="email" id="email">
+                <input type="email" name="email" id="email" required>
                 <label class="form-phone" for="phone">Telefone</label>
-                <input type="tel" name="phone" id="phone" >
+                <input type="tel" name="phone" id="phone" required>
                 <label class="form-message" for="message">Mensagem</label>
-                <textarea name="message" id="message" wrap="hard"></textarea>
+                <textarea name="message" id="message" wrap="hard" required></textarea>
                 <button class="btn-send" type="submit">ENVIAR</button>
                 </form>
             </div>
