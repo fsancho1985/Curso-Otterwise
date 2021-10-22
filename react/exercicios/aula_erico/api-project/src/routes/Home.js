@@ -1,13 +1,8 @@
 import { useState, useEffect } from 'react'
 import axios from 'axios'
 import CircularProgress from '@mui/material/CircularProgress'
-// import Card from '@mui/material/Card'
-// import CardActions from '@mui/material/CardActions'
-// import CardContent from '@mui/material/CardContent'
-// import Button from '@mui/material/Button'
-// import Typography from '@mui/material/Typography'
 
-import VaiPorra from '../Components/VaiPorra'
+import RenderComments from '../Components/RenderComments'
 
 function Home() {
     const [posts, setPosts] = useState()
@@ -33,7 +28,7 @@ function Home() {
     <div>
       {posts.map(({ id, title, body }) => {
         return (
-          <VaiPorra key={id} id={id} title={title} body={body}/>
+          <RenderComments key={id} id={id} title={title} body={body}/>
         )
       })}
     </div>

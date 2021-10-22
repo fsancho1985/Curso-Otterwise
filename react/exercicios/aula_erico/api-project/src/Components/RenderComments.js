@@ -7,7 +7,7 @@ import Button from '@mui/material/Button'
 import Typography from '@mui/material/Typography'
 
 
-function VaiPorra({ id, title, body }) {
+function RenderComments({ id, title, body }) {
 
     const history = useHistory() 
 
@@ -40,4 +40,4 @@ function VaiPorra({ id, title, body }) {
     )
 }
 
-export default VaiPorra
+export default RenderComments
