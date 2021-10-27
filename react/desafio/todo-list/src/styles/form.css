@@ -1,0 +1,23 @@
+.container-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn-back {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.label-edit-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.label-edit-form label {
+    width: 100%;
+    text-align: center;
+}
