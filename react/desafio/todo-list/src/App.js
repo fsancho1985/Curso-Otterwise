@@ -1,14 +1,17 @@
 import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom"
+import { ToastContainer } from 'react-toastify'
 
 import Home from './components/Home'
 import Form from './components/Form'
 import EditForm from "./components/EditForm";
 
 import './App.css';
+import "react-toastify/dist/ReactToastify.css"
 
 function App() {
   return (
     <Router>
+      <ToastContainer/>
       <div>
         <nav>
           <ul>

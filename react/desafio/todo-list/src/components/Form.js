@@ -1,6 +1,7 @@
 import { useHistory } from "react-router"
 import {useForm} from 'react-hook-form'
 import {Box, TextField, Button} from '@mui/material'
+import { toast } from "react-toastify"
 
 import '../styles/form.css'
 import { Post } from "../services/Services"
@@ -17,10 +18,12 @@ function Form() {
       const onSubmit = async data => {
         try {
           const {data: resp} = await Post(data)
-          alert('Criado!')
+          console.log(resp)
+          toast.success("Post criado com sucesso!")
           history.push('/')          
-      } catch (error) {
-        console.error(error)
+        } catch (error) {
+          console.error(error)
+          toast.error("Ops! Algo de inesperado aconteceu! Os campos Título e Descrição devem estar preenchidos")
       }
     }
 

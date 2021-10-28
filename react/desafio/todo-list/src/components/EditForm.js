@@ -1,8 +1,9 @@
-import { useState, useEffect } from "react"
+import { useEffect } from "react"
 
 import { useHistory, useParams } from "react-router"
 import {useForm} from 'react-hook-form'
 import {Box, TextField, Button} from '@mui/material'
+import { toast } from "react-toastify"
 
 import '../styles/form.css'
 // import client from "../provider/client"
@@ -39,11 +40,11 @@ function EditForm() {
             console.log('Enviou ', data)
             const {data: resp} = await Put(id, data)
             console.log('Resp after Put: ', resp)
-            alert('Editou')
+            toast.success("Post editado com sucesso!")
             history.push('/')
           } catch (error) {
             console.error(error)
-            alert('Não alterou')
+            toast.error("Ops! Algo de inesperado aconteceu! Os campos Título e Descrição devem estar preenchidos")
           }
         }
 
